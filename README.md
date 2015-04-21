@@ -33,6 +33,16 @@ This tool is meant for a programmer to set up. Example below uses [this public t
     		+ '<%= getter("YR_INSTALLED") + (getter("YR_INSTALLED") > 2010 ? "NEW" : "OLD") %>'
     		+ '</li>';
 
+
+
 ## Time complexity
 
 ![XKCD Traveling Salesman](http://imgs.xkcd.com/comics/travelling_salesman_problem.png)
+
+## Author and licence
+
+(c) 2014 [Pavel Zbytovský](http://zby.cz)
+
+Licenced under MIT license.
+
+ 
