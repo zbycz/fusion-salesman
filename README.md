@@ -28,9 +28,11 @@ This tool is meant for a programmer to set up. Example below uses [this public t
     // everything between <%= and %> is eval'd
     config.cardHtmlTemplate = '<li class="card" data-index="<%= idx %>">'
     		+ '<span class="handle" style="background-image:url(\'<%= iconUrl %>\')"></span>'
-    		+ '<b><%= getter("LOCATION_NAME") %></b> <a href="#">×</a><br>'
+    		+ '<b><%= getter("LOCATION_NAME") %></b> <a href="#">Ã—</a><br>'
     		+ 'Address: <%= getter("ADDRESS") %><br>'
     		+ '<%= getter("YR_INSTALLED") + (getter("YR_INSTALLED") > 2010 ? "NEW" : "OLD") %>'
     		+ '</li>';
 
+## Time complexity
 
+![XKCD Traveling Salesman](http://imgs.xkcd.com/comics/travelling_salesman_problem.png)
