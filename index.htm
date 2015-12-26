@@ -29,8 +29,14 @@ route.push(defaultPoint);
 route.push(defaultPoint);
 
 /** Init click listener and find first route.
+ * On window load.
  */
 function initialize() {
+	//add link to source table
+	var sourceLink = document.getElementById('source-table');
+	sourceLink.href += config.fusionTablesQuery.from;
+
+	//init map canvas
 	map = new google.maps.Map(document.getElementById('map-canvas'), {
 		center: new google.maps.LatLng(config.center[0], config.center[1]),
 		zoom: config.center[2]
@@ -370,9 +376,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	<div style="padding: 0.5em 1em 0 1em;">
 		<ul id="places"></ul>
 
-		<p>Click a point in the map to add to itinerary.</p>
+		<p>Start by clicking a red point in the map.</p>
 
-		<p>Found ways betweeen points could be rerouted by dragging the route.</p>
+		<p>All found routes between points could drag&amp;dropped elsewhere.</p>
+		
+		<p><a href="https://www.google.com/fusiontables/DataSource?docid=" id="source-table">Source Google Fusion Table</a></p>
 	</div>
 
 	<div id="directionsPanel" style="padding: 1em;"></div>

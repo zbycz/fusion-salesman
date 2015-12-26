@@ -1,6 +1,6 @@
 # Travelling salesman for Google Fusion Tables
 
-Easily visualizes data from fusion table and provied UI for creating the itinerary.
+Easily visualizes data from fusion table and provides a UI for creating the travel itinerary.
 This tool is meant for a programmer to set up. Example below uses [this public table](https://www.google.com/fusiontables/DataSource?docid=1aQSsgRr0wHUcUQ7AYNWBtgoovZMs7qEF91VmzEfo). 
 
 [LIVE DEMO](http://rawgit.com/zbycz/fusion-salesman/master/index.htm)
