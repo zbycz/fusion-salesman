@@ -237,7 +237,7 @@ function template(vars) {
 /** Helper for icon url (in template & in map)
  */
 function getIconUrl(number) {
-	return 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + number + '|FF0000|000000'; //FE6256|000000
+	return 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + number + '|990000|FFFFFF'; //FE6256|000000
 	//text icon: 'http://chart.apis.google.com/chart?chst=d_map_spin&chld=1|0|FF0000|12|_|foo',
 }
 
@@ -362,7 +362,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		#right-panel {
 			position: static;
 			width: 70%;
-			overflow: auto
+			overflow: auto;
+			height: auto;
 		}
 	}
 
@@ -380,7 +381,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 		<p>All found routes between points could drag&amp;dropped elsewhere.</p>
 		
-		<p><a href="https://www.google.com/fusiontables/DataSource?docid=" id="source-table">Source Google Fusion Table</a></p>
+		<p><a href="https://www.google.com/fusiontables/DataSource?docid=" id="source-table" title="Google Fusion Table">Source data table</a></p>
 	</div>
 
 	<div id="directionsPanel" style="padding: 1em;"></div>
